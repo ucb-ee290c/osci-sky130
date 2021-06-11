@@ -1,3 +1,9 @@
 [submodule "caraval_user_project_analog"]
 	path = caraval_user_project_analog
 	url = git@bwrcrepo.eecs.berkeley.edu:swtech130/osci-sky130-caravel_user_project_analog.git
+[submodule "chipyard"]
+	path = chipyard
+	url = git@bwrcrepo.eecs.berkeley.edu:swtech130/chipyard-osci-sky130.git
+[submodule "bag-workspace"]
+	path = bag-workspace
+	url = git@bwrcrepo.eecs.berkeley.edu:swtech130/osci-sky130-bag-workspace.git
