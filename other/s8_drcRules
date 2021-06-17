@@ -892,7 +892,10 @@ exempt_nwell6_Cells = (EXTENT CELL "*sr_1028x128_ssa*") OR
 ((EXTENT CELL "sr_1028x1025_ssa*") OR 
 ((EXTENT CELL "up_32x256t*") OR (EXTENT CELL "up_128x256t*")))
 exemptNhvnativeCell = EXTENT CELL "s8fgvr_fg2n" ORIGINAL
-exemptDeCapCell = (EXTENT CELL "scs8*decap*" ORIGINAL) AND STDCID
+exemptsky130sram = (EXTENT CELL "sky130*sram*" ORIGINAL) AND STDCID // FIXME! actually make use of this
+exemptDeCapCell1 = (EXTENT CELL "scs8*decap*" ORIGINAL) AND STDCID
+exemptDeCapCell2 = (EXTENT CELL "sky130*decap*" ORIGINAL) AND STDCID
+exemptDeCapCell  = exemptDeCapCell1 OR exemptDeCapCell2
 polyLicon1 = INTERACT (licon1 NOT licon1ToXfom) ((licon1 NOT licon1ToXfom) AND poly)
 source_diffusion = (nSRCDRN WITH EDGE (nSRCDRN COINCIDENT OUTSIDE EDGE PTAP)) OR (pSRCDRN WITH EDGE (pSRCDRN COINCIDENT OUTSIDE EDGE NTAP))
 licon1ToXfom_PERI = licon1ToXfom NOT COREID
@@ -10954,7 +10957,7 @@ validCoreID = (((validCoreID1 OR validCoreID2) OR (validCoreID3 OR validCoreID4)
 (validCoreID_TDRrevCL OR 
 (validCoreID_TDRrevCW OR 
 (validCoreID_s8fmlt_cell OR 
-(validCoreID_product_srom OR validCoreID_s8fs)))))))
+(validCoreID_product_srom OR validCoreID_s8fs))))))) 
 inValidCoreID = COREID NOT validCoreID
 "r_1132_areaid.1" {
     @ areaid.1: Unapproved cells contain areaid.ce layer
