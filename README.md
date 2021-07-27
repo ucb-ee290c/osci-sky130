@@ -1,4 +1,3 @@
-
 # Osci130
 
 A meta-repo collection of all the stuff in the Skywater 130nm edition of the OsciBear SoC.  
@@ -11,3 +10,4 @@ Consists of three main components:
 
 A handful of related other files are tracked in this repository's [other](./other) directory. 
     
+![System Block Diagram](https://bwrcrepo.eecs.berkeley.edu/swtech130/osci-sky130/-/raw/master/docs/Sky130_Tapeout_BlockDiagram.png)
