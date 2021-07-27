@@ -51,4 +51,7 @@ The digital portion of the chip used Chipyard to generate the RTL of the design,
 ## Chip Layout
 
 
+<img src="https://bwrcrepo.eecs.berkeley.edu/swtech130/osci-sky130/-/raw/master/docs/Sky130_Chip_Layout.png" alt="Chip Layout" width="700"/>
 
+## Digital Layout
+<img src="https://bwrcrepo.eecs.berkeley.edu/swtech130/osci-sky130/-/raw/master/docs/Sky130_Digital_Layout_Highlighted.png" alt="Chip Layout" width="900"/>
